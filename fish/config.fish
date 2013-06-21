@@ -30,6 +30,11 @@ end
 # list all files
 alias l="ls -al"
 
+# cd to front-most Finder window
+function cdf
+	cd (osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')
+end
+
 # open in Finder
 function o; open .; end
 
@@ -45,5 +50,9 @@ alias whois="whois -h whois-servers.net"
 # Recursively delete `.DS_Store` files
 function cleanup; find . -name '*.DS_Store' -type f -ls -delete; end
 
+# edit this config file
+function config
+	slime ~/.config/fish/config.fish
+end
 
 true
