@@ -8,7 +8,7 @@ set -gx PATH $PATH ~/Dropbox/bin				# scripts in dropbox
 set -gx NODE_PATH /usr/local/lib/node
 
 # java home
-set -gx JAVA_HOME /usr/libexec/java_home 
+set -gx JAVA_HOME /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 
 # open in Sublime Text
 function slime
