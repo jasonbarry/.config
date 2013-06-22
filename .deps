@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# install homebrew
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
+# fish shell
+brew install fish
+
+# updated git
+brew install git
+brew install legit
+
+# node
+brew install node
+
+# headless webkit for testing
+brew install phantomjs
+
+# use nginx instead of apache
+brew install nginx
+
+# couch and mysql database systems
+brew install couchdb
+brew install mysql
+
+# build scripts
+npm install -g grunt-cli
+
+# javascript validation
+npm install -g jshint
+
+# css preprocessor
+gem install sass
+
