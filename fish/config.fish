@@ -50,6 +50,11 @@ alias whois="whois -h whois-servers.net"
 # Recursively delete `.DS_Store` files
 function cleanup; find . -name '*.DS_Store' -type f -ls -delete; end
 
+# restore bang bang
+function sudo!!
+	eval sudo $history[1]
+end
+
 # edit this config file
 function config
 	slime ~/.config/fish/config.fish
