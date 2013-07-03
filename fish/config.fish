@@ -3,6 +3,7 @@ set -gx PATH /usr/local/bin /usr/bin /usr/local/sbin /usr/sbin /bin /sbin
 set -gx PATH $PATH /usr/local/share/npm/bin		# node packages
 set -gx PATH $PATH /usr/local/opt/ruby/bin		# ruby gems
 set -gx PATH $PATH ~/Dropbox/bin				# scripts in dropbox
+set -gx PATH $PATH ~/.rvm/bin					# for rvm
 
 # special path for node
 set -gx NODE_PATH /usr/local/lib/node
